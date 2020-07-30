@@ -1,0 +1,22 @@
+body {
+  font-size: 15px;
+  display: flex;
+}
+
+span {
+  font-style: 20px;
+}
+
+div {
+  font-size: 30px;
+}
+
+@media (max-width: 767px) {
+  span {
+    font-size: 15px;
+  }
+
+  div {
+    font-size: 20px;
+  }
+}
