@@ -1,22 +1,6 @@
-body {
-  font-size: 15px;
-  display: flex;
-}
-
-span {
-  font-style: 20px;
-}
-
 div {
-  font-size: 30px;
+  background: url("../img/qqq.jpg") 0 0 no-repeat;
 }
-
-@media (max-width: 767px) {
-  span {
-    font-size: 15px;
-  }
-
-  div {
-    font-size: 20px;
-  }
+@supports (-webkit-appearance:none){
+div{background:url("../img/qqq.jpg") 0 0 no-repeat}
 }
