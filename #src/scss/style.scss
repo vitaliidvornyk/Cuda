@@ -1,3 +1,9 @@
+// Подключаем bootstrap. Сброс css стилей браузера //
+
+@import "bootstrap-reboot.min.scss";
+
+// Подключаем шрифты //
+
 @mixin font($font_name, $file_name, $weight, $style) {
 
     @font-face {
@@ -7,10 +13,25 @@
     font-weight: #{$weight};
     font-style: #{$style};
     }
+
 }
 
-@import "fonts";
+@import "fonts.scss";
 
-div {
-    background: url("../img/qqq.jpg") 0 0 no-repeat;
+// Устанавливаем ширину контейнера //
+
+.container {
+    max-width: 1040px;
+    margin: 0 auto;
 }
+
+// Подключаем блоки с css стилями //
+
+@import "navbar.scss";
+@import "header.scss";
+@import "title.scss";
+@import "button.scss";
+@import "services.scss";
+@import "beautiful-team.scss";
+@import "skills.scss";
+@import "portfolio.scss";

@@ -1,50 +1,54 @@
-let project_folder = require("path").basename(__dirname);
-let source_folder = "#src";
+let project_folder = require("path").basename(__dirname); // Конечная папка выгрузки проекта. Финальные файлы проекта //
+let source_folder = "#src";	// Папка с исходными файлами. Черновые файлы проекта //
 
 let fs = require('fs');
 
+// Указываем пути исходных и конечных папок //
+
 let path = {
 	build:{
-		html: project_folder + "/",
-		css: project_folder + "/css/",
-		js: project_folder + "/js/",
-		img: project_folder + "/img/",
-		fonts: project_folder + "/fonts/",
+		html: project_folder + "/",	// Конечная папка html //
+		css: project_folder + "/css/",	// Конечная папка css //
+		js: project_folder + "/js/",	// Конечная папка js //
+		img: project_folder + "/img/",	// Конечная папка img //
+		fonts: project_folder + "/fonts/",	// Конечная папка fonts //
 	},
 	src: {
-		html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
-		css: source_folder + "/scss/style.scss",
-		js: source_folder + "/js/script.js",
-		img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
-		fonts: source_folder + "/fonts/*.ttf",
+		html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],	// Исходная папка html //
+		css: source_folder + "/scss/style.scss",	// Исходная папка css //
+		js: source_folder + "/js/script.js",	// Исходная папка js //
+		img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",	// Исходная папка img //
+		fonts: source_folder + "/fonts/*.ttf",	// Исходная папка Fonts //
 	},
 	watch: {
-		html: source_folder + "/**/*.html",
-		css: source_folder + "/scss/**/*.scss",
-		js: source_folder + "/js/**/*.js",
-		img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}"
+		html: source_folder + "/**/*.html",	// "Прослушка файла html" //
+		css: source_folder + "/scss/**/*.scss",	// "Прослушка файла css" //
+		js: source_folder + "/js/**/*.js",	// "Прослушка файла js" //
+		img: source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}"	// "Прослушка файла img" //
 	},
-	clean: "./" + project_folder + "/"
+	clean: "./" + project_folder + "/"	// Удаление папки dist каждый раз, когда запускаем Gulp //
 }
 
+// Обьявляем переменные //
+
 let { src, dest } = require('gulp'),
-	gulp = require('gulp'),
-	browsersync = require("browser-sync").create(),
-	fileinclude = require("gulp-file-include"),
+	gulp = require('gulp'),	// Gulp //
+	browsersync = require("browser-sync").create(),	// Обновление страницы браузера //
+	fileinclude = require("gulp-file-include"),	// Сборка html-файлов в один //
 	del = require("del"),
 	scss = require("gulp-sass"),
-	autoprefixer = require("gulp-autoprefixer"),
-	group_media = require("gulp-group-css-media-queries"),
+	autoprefixer = require("gulp-autoprefixer"),	// Установка автопрефиксов //
+	group_media = require("gulp-group-css-media-queries"),	// Группируем медиа-запросы в конец файла //
 	clean_css = require("gulp-clean-css"),
 	rename = require("gulp-rename"),
 	uglify = require("gulp-uglify-es").default,
-	imagemin = require("gulp-imagemin"),
+	imagemin = require("gulp-imagemin"),	// Оптимизация картинок //
 	webp = require("gulp-webp"),
 	webphtml = require("gulp-webp-html"),
 	webpcss = require("gulp-webp-css"),
-	ttf2woff = require("gulp-ttf2woff"),
-	ttf2woff2 = require("gulp-ttf2woff2"),
-	fonter = require("gulp-fonter");
+	ttf2woff = require("gulp-ttf2woff"),	// Конвертация шрифтов ttf в woff //
+	ttf2woff2 = require("gulp-ttf2woff2"),	// Конвертация шрифтов ttf в woff2 //
+	fonter = require("gulp-fonter");	// Подключение шрифтов //
 
 function browserSync(params) {
 	browsersync.init({

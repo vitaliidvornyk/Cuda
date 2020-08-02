@@ -1,0 +1,42 @@
+.navbar {
+    min-height: 94px;
+    padding: 57px 0 0 0;
+    background: #87509c;
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &__items {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 0;
+        margin: auto 0px auto 483px;
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        list-style-type: none;
+        width: 77px;
+        height: 32px;
+        &:last-child {
+            margin-right: 0;
+        }
+        &:hover {
+            background-color: #643a79;
+        }
+    }
+    &__link {
+        font-family: TitilliumWeb-Regular;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #ffffff;
+        &:hover {
+            color: #ffffff;
+            text-decoration: none;
+        }
+    }
+}

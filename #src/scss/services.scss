@@ -1,0 +1,32 @@
+.services {
+    min-height: 747px;
+    padding: 119px 0 128px 0;
+    background: #17c2a4;
+}
+
+.tools {
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 78px;
+    }
+    &__item {
+        flex: 0 0 22%;
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+    &__descr {
+        font-family: TitilliumWeb-Light;
+        font-size: 16px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.5;
+        letter-spacing: 0.32px;
+        text-align: center;
+        color: #ffffff;
+        margin-top: 27px;
+    }
+}

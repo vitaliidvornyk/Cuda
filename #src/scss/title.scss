@@ -1,0 +1,96 @@
+.title {
+    font-family: TitilliumWeb-Bold;
+    font-size: 43px;
+    color: #f7f3ea;
+    text-align: center;
+    &_services {
+        font-family: TitilliumWeb-Bold;
+        font-size: 40px;
+        letter-spacing: 4px;
+        text-align: center;
+        color: #ffffff;
+    }
+    &_line-services::after {
+        content: '';
+        display: block;
+        width: 87px;
+        height: 4px;
+        opacity: 0.15;
+        background-color: #000000;
+        margin: 21px auto 0 auto;
+    }
+    &_team {
+        font-family: TitilliumWeb-Bold;
+        font-size: 41px;
+        line-height: 31px;
+        letter-spacing: 4.15px;
+        text-align: center;
+        color: #3c4761;
+    }
+    &_line-team::after {
+        content: '';
+        display: block;
+        width: 87px;
+        height: 6px;
+        opacity: 0.75;
+        background-color: #bdd1df;
+        margin: 21px auto 0 auto;
+    }
+    &_skills {
+        font-family: TitilliumWeb-Bold;
+        font-size: 40px;
+        line-height: 0.75;
+        letter-spacing: 4px;
+        text-align: center;
+        color: #3c4761;
+    }
+    &_line-skills::after {
+        content: '';
+        display: block;
+        width: 87px;
+        height: 4px;
+        background-color: #dfe8ed;
+        margin: 21px auto 0 auto;
+    }
+}
+
+
+
+.subtitle {
+    &_services {
+        font-family: TitilliumWeb-Regular;
+        font-size: 18px;
+        letter-spacing: 0.36px;
+        text-align: center;
+        line-height: 26px;
+        color: #ffffff;
+        margin-top: 23px;
+    }
+    &_tools {
+        margin-top: 60px;
+        font-family: TitilliumWeb-Bold;
+        font-size: 24px;
+        letter-spacing: 0.48px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+    }
+    &_team {
+        font-family: TitilliumWeb-Regular;
+        font-size: 18px;
+        line-height: 27px;
+        letter-spacing: 0.37px;
+        text-align: center;
+        color: #3c4761;
+        margin-top: 24px;
+    }
+    &_skills {
+        font-family: TitilliumWeb-Regular;
+        font-size: 18px;
+        line-height: 1.44;
+        letter-spacing: 0.36px;
+        text-align: center;
+        color: #3c4761;
+        margin: 23px auto 0 auto;
+    }
+}
