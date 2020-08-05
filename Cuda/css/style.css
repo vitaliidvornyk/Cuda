@@ -439,8 +439,11 @@ template {
 
 .title {
   font-family: TitilliumWeb-Bold;
-  font-size: 43px;
+  font-size: 42.5px;
   color: #f7f3ea;
+  margin-bottom: 0;
+  line-height: 49px;
+  letter-spacing: normal;
   text-align: center;
 }
 
@@ -517,14 +520,36 @@ template {
   margin: 21px auto 0 auto;
 }
 
+.title_reviews {
+  font-family: TitilliumWeb-Bold;
+  font-size: 40px;
+  line-height: 30px;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.title_line-reviews::after {
+  content: '';
+  display: block;
+  width: 87px;
+  height: 4px;
+  opacity: 0.15;
+  background-color: #000000;
+  margin: 21px auto 0 auto;
+}
+
+.subtitle {
+  margin: 23px auto 0 auto;
+  text-align: center;
+}
+
 .subtitle_services {
   font-family: TitilliumWeb-Regular;
   font-size: 18px;
   letter-spacing: 0.36px;
-  text-align: center;
   line-height: 26px;
   color: #ffffff;
-  margin-top: 23px;
 }
 
 .subtitle_tools {
@@ -532,7 +557,6 @@ template {
   font-family: TitilliumWeb-Bold;
   font-size: 24px;
   letter-spacing: 0.48px;
-  text-align: center;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -542,9 +566,7 @@ template {
   font-size: 18px;
   line-height: 27px;
   letter-spacing: 0.37px;
-  text-align: center;
   color: #3c4761;
-  margin-top: 24px;
 }
 
 .subtitle_skills {
@@ -552,9 +574,7 @@ template {
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 0.36px;
-  text-align: center;
   color: #3c4761;
-  margin: 23px auto 0 auto;
 }
 
 .subtitle_portfolio {
@@ -562,9 +582,15 @@ template {
   font-size: 18px;
   line-height: 26px;
   letter-spacing: 0.36px;
-  text-align: center;
   color: #393939;
-  margin: 23px auto 0 auto;
+}
+
+.subtitle_reviews {
+  font-family: TitilliumWeb-Regular;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.36px;
+  color: #ffffff;
 }
 
 .button {
@@ -826,6 +852,71 @@ template {
 
 .tabs-content__img {
   width: 100%;
+}
+
+.reviews {
+  min-height: 895px;
+  padding: 119px 0 129px 0;
+  background: #d74680;
+}
+
+.reviews__wrapper {
+  margin: 71px auto 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.reviews__item {
+  display: flex;
+  flex: 0 0 45.6%;
+  margin-bottom: 147px;
+}
+
+.reviews__item:nth-child(odd) {
+  margin-right: 95px;
+}
+
+.reviews__item:nth-last-child(-n+2) {
+  margin-bottom: 0;
+}
+
+.reviews__img {
+  display: block;
+  margin-right: 48px;
+}
+
+.reviews__info {
+  padding: 11px 0 0;
+}
+
+.reviews__text {
+  font-family: TitilliumWeb-Italic;
+  font-style: italic;
+  font-size: 21.5px;
+  line-height: 31px;
+  letter-spacing: 0.43px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.reviews__name {
+  margin-top: 28px;
+  font-family: TitilliumWeb-Bold;
+  font-size: 24px;
+  line-height: 26px;
+  letter-spacing: 0.48px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.reviews__name span {
+  display: block;
+  font-family: TitilliumWeb-Regular;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.36px;
+  text-align: left;
+  color: #ffdd99;
 }
 @supports (-webkit-appearance:none){
 
