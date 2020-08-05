@@ -39,7 +39,7 @@
     &_skills {
         font-family: TitilliumWeb-Bold;
         font-size: 40px;
-        line-height: 0.75;
+        line-height: 30px;
         letter-spacing: 4px;
         text-align: center;
         color: #3c4761;
@@ -50,6 +50,22 @@
         width: 87px;
         height: 4px;
         background-color: #dfe8ed;
+        margin: 21px auto 0 auto;
+    }
+    &_portfolio {
+        font-family: TitilliumWeb-Bold;
+        font-size: 40px;
+        line-height: 30px;
+        letter-spacing: 4px;
+        text-align: center;
+        color: #393939;
+    }
+    &_line-portfolio::after {
+        content: '';
+        display: block;
+        width: 87px;
+        height: 4px;
+        background-color: #e5c37f;
         margin: 21px auto 0 auto;
     }
 }
@@ -87,10 +103,19 @@
     &_skills {
         font-family: TitilliumWeb-Regular;
         font-size: 18px;
-        line-height: 1.44;
+        line-height: 26px;
         letter-spacing: 0.36px;
         text-align: center;
         color: #3c4761;
+        margin: 23px auto 0 auto;
+    }
+    &_portfolio {
+        font-family: TitilliumWeb-Regular;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0.36px;
+        text-align: center;
+        color: #393939;
         margin: 23px auto 0 auto;
     }
 }

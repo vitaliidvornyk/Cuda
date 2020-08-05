@@ -371,7 +371,7 @@ template {
 }
 
 .container {
-  max-width: 1040px;
+  max-width: 1102px;
   margin: 0 auto;
 }
 
@@ -484,7 +484,7 @@ template {
 .title_skills {
   font-family: TitilliumWeb-Bold;
   font-size: 40px;
-  line-height: 0.75;
+  line-height: 30px;
   letter-spacing: 4px;
   text-align: center;
   color: #3c4761;
@@ -496,6 +496,24 @@ template {
   width: 87px;
   height: 4px;
   background-color: #dfe8ed;
+  margin: 21px auto 0 auto;
+}
+
+.title_portfolio {
+  font-family: TitilliumWeb-Bold;
+  font-size: 40px;
+  line-height: 30px;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #393939;
+}
+
+.title_line-portfolio::after {
+  content: '';
+  display: block;
+  width: 87px;
+  height: 4px;
+  background-color: #e5c37f;
   margin: 21px auto 0 auto;
 }
 
@@ -532,10 +550,20 @@ template {
 .subtitle_skills {
   font-family: TitilliumWeb-Regular;
   font-size: 18px;
-  line-height: 1.44;
+  line-height: 26px;
   letter-spacing: 0.36px;
   text-align: center;
   color: #3c4761;
+  margin: 23px auto 0 auto;
+}
+
+.subtitle_portfolio {
+  font-family: TitilliumWeb-Regular;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.36px;
+  text-align: center;
+  color: #393939;
   margin: 23px auto 0 auto;
 }
 
@@ -551,6 +579,18 @@ template {
   line-height: 1.54;
   letter-spacing: 0.35px;
   color: #ffffff;
+}
+
+.button_portfolio {
+  margin: 19px auto 0 auto;
+  font-family: TitilliumWeb-SemiBold;
+  font-size: 17.5px;
+  line-height: 27px;
+  letter-spacing: 0.35px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #17c2a4;
 }
 
 .services {
@@ -700,6 +740,92 @@ template {
   text-align: center;
   text-transform: uppercase;
   color: #3c4761;
+}
+
+.portfolio {
+  min-height: 1423px;
+  padding: 120px 0 109px 0;
+  background: #ffdd99;
+}
+
+.portfolio__tabs {
+  margin-top: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tabs-triggers {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.tabs-triggers a:hover {
+  color: #393939;
+  text-decoration: none;
+}
+
+.tabs-triggers__item {
+  width: 84px;
+  height: 38px;
+  border-radius: 4px;
+  background-color: #ebc985;
+  font-family: TitilliumWeb-Regular;
+  font-size: 18px;
+  line-height: 37px;
+  letter-spacing: 0.36px;
+  text-align: center;
+  color: #393939;
+  margin-right: 10px;
+}
+
+.tabs-triggers__item:last-child {
+  margin-right: 0;
+}
+
+.tabs-triggers__item_active {
+  display: block;
+  background-color: #ffffff;
+}
+
+.tabs-content {
+  margin-top: 62px;
+}
+
+.tabs-content__item {
+  display: none;
+}
+
+.tabs-content__item_active {
+  display: flex;
+}
+
+.tabs-content__element {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabs-content__element-wrapper {
+  flex: 0 0 49%;
+}
+
+.tabs-content__element-wrapper:nth-child(odd) {
+  margin: 0 20px 64px 0;
+}
+
+.tabs-content__descr {
+  margin-top: 30px;
+  font-family: TitilliumWeb-Regular;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0.36px;
+  text-align: center;
+  color: #393939;
+}
+
+.tabs-content__img {
+  width: 100%;
 }
 @supports (-webkit-appearance:none){
 
