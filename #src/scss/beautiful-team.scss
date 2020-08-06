@@ -4,9 +4,12 @@
     background: #e7f1f8;
     &__wrapper {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__wrapper-items {
+        display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        align-items: baseline;
         margin-top: 78px;
     }
 }

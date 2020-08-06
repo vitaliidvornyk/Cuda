@@ -7,9 +7,12 @@
     background-color: #eb7d4b;
     font-family: TitilliumWeb-SemiBold;
     font-size: 17px;
-    line-height: 1.54;
+    line-height: 26px;
     letter-spacing: 0.35px;
     color: #ffffff;
+    &:focus {
+        outline: none;
+    }
     &_portfolio {
         margin: 19px auto 0 auto;
         font-family: TitilliumWeb-SemiBold;
@@ -20,5 +23,8 @@
         text-transform: uppercase;
         color: #ffffff;
         background-color: #17c2a4;
+    }
+    &_touch {
+        background: #30bae7;
     }
 }

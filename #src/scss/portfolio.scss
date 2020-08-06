@@ -2,6 +2,11 @@
     min-height: 1423px;
     padding: 120px 0 109px 0;
     background: #ffdd99;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     &__tabs {
         margin-top: 42px;
         display: flex;

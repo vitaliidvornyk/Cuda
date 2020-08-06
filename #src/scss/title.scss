@@ -88,6 +88,23 @@
         background-color: #000000;
         margin: 21px auto 0 auto;
     }
+    &_touch {
+        font-family: TitilliumWeb-Bold;
+        font-size: 40px;
+        line-height: 30px;
+        letter-spacing: 4px;
+        text-align: center;
+        color: #ffffff;
+    }
+    &_line-touch::after {
+        content: '';
+        display: block;
+        width: 87px;
+        height: 4px;
+        opacity: 0.15;
+        background-color: #273a71;
+        margin: 21px auto 0 auto;
+    }
 }
 
 
@@ -136,6 +153,14 @@
         font-size: 18px;
         line-height: 26px;
         letter-spacing: 0.36px;
+        color: #ffffff;
+    }
+    &_touch {
+        font-family: TitilliumWeb-Bold;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0.36px;
+        text-align: center;
         color: #ffffff;
     }
 }

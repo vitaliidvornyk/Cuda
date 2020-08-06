@@ -539,6 +539,25 @@ template {
   margin: 21px auto 0 auto;
 }
 
+.title_touch {
+  font-family: TitilliumWeb-Bold;
+  font-size: 40px;
+  line-height: 30px;
+  letter-spacing: 4px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.title_line-touch::after {
+  content: '';
+  display: block;
+  width: 87px;
+  height: 4px;
+  opacity: 0.15;
+  background-color: #273a71;
+  margin: 21px auto 0 auto;
+}
+
 .subtitle {
   margin: 23px auto 0 auto;
   text-align: center;
@@ -593,6 +612,15 @@ template {
   color: #ffffff;
 }
 
+.subtitle_touch {
+  font-family: TitilliumWeb-Bold;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: 0.36px;
+  text-align: center;
+  color: #ffffff;
+}
+
 .button {
   width: 293px;
   height: 70px;
@@ -602,9 +630,13 @@ template {
   background-color: #eb7d4b;
   font-family: TitilliumWeb-SemiBold;
   font-size: 17px;
-  line-height: 1.54;
+  line-height: 26px;
   letter-spacing: 0.35px;
   color: #ffffff;
+}
+
+.button:focus {
+  outline: none;
 }
 
 .button_portfolio {
@@ -617,6 +649,10 @@ template {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #17c2a4;
+}
+
+.button_touch {
+  background: #30bae7;
 }
 
 .services {
@@ -661,9 +697,13 @@ template {
 
 .beautiful-team__wrapper {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.beautiful-team__wrapper-items {
+  display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
   margin-top: 78px;
 }
 
@@ -743,10 +783,15 @@ template {
 
 .skills__wrapper {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   margin-top: 84px;
+}
+
+.skills__wrapper-item {
+  display: flex;
+  flex-direction: row;
+  margin-top: 73px;
 }
 
 .skills__item {
@@ -772,6 +817,12 @@ template {
   min-height: 1423px;
   padding: 120px 0 109px 0;
   background: #ffdd99;
+}
+
+.portfolio__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .portfolio__tabs {
@@ -860,7 +911,7 @@ template {
   background: #d74680;
 }
 
-.reviews__wrapper {
+.reviews__wrapper-info {
   margin: 71px auto 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -917,6 +968,105 @@ template {
   letter-spacing: 0.36px;
   text-align: left;
   color: #ffdd99;
+}
+
+.touch {
+  min-height: 819px;
+  padding: 120px 0 115px 0;
+  background: #3c5499;
+}
+
+.touch__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.touch__wrapper-form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 78.04%;
+  margin-top: 76px;
+}
+
+.touch__wrapper-form-input {
+  display: flex;
+  flex: 0 0 48.14%;
+  margin-right: 32px;
+  min-height: 56px;
+}
+
+.touch__wrapper-form-input:nth-child(2) {
+  margin-right: 0;
+}
+
+.touch__wrapper-form-input:last-child {
+  flex: 0 0 100%;
+  margin: 27px 0 auto 0;
+  min-height: 200px;
+}
+
+.touch__wrapper-form-input input {
+  width: 100%;
+  padding-left: 25px;
+  border-radius: 4px;
+  border-style: none;
+  background: #273a71;
+  color: #ffffff;
+}
+
+.touch__wrapper-form-input input::-moz-placeholder {
+  color: #ffffff;
+}
+
+.touch__wrapper-form-input input:-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.touch__wrapper-form-input input::-ms-input-placeholder {
+  color: #ffffff;
+}
+
+.touch__wrapper-form-input input::placeholder {
+  color: #ffffff;
+}
+
+.touch__wrapper-form-input input:focus {
+  outline: none;
+}
+
+.footer {
+  min-height: 112px;
+  background: #344b8e;
+  padding: 48px 0 41px 0;
+  display: flex;
+  align-items: center;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer__social {
+  margin-right: 53px;
+}
+
+.footer__social:last-child {
+  margin-right: 0;
+}
+
+.footer__link {
+  display: block;
+  font-family: TitilliumWeb-Regular;
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.footer__link:hover {
+  text-decoration: none;
 }
 @supports (-webkit-appearance:none){
 
