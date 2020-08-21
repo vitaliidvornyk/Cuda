@@ -2,17 +2,10 @@
     min-height: 112px;
     background: #344b8e;
     padding: 48px 0 41px 0;
-    display: flex;
-    align-items: center;
     &__wrapper {
         display: flex;
         flex-direction: row;
-    }
-    &__social {
-        margin-right: 53px;
-        &:last-child {
-            margin-right: 0;
-        }
+        justify-content: space-around;
     }
     &__link {
         display: block;

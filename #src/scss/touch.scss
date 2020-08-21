@@ -41,6 +41,10 @@
                 outline: none;
             }
         }
+
+        @media (max-width:$screen-lg-max) {
+            margin-right: 27px;
+        }
     }
 }
   

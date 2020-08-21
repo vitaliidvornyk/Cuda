@@ -6,14 +6,12 @@
         margin: 71px auto 0 auto;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
     }
     &__item {
         display: flex;
         flex: 0 0 45.6%;
         margin-bottom: 147px;
-        &:nth-child(odd) {
-            margin-right: 95px;
-        }
         &:nth-last-child(-n+2) {
             margin-bottom: 0;
         }
@@ -41,6 +39,7 @@
         line-height: 26px;
         letter-spacing: 0.48px;
         text-align: left;
+        text-transform: uppercase;
         color: #ffffff;
         span {
             display: block;
@@ -52,4 +51,11 @@
             color: #ffdd99;
         }
     }
+
+    // @media (max-width: $screen-lg-max) {
+    //     margin-bottom: 110px;
+    //     &:nth-child(odd) {
+    //         margin-right: 50px;
+    //     }
+    // }
 }

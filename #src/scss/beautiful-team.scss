@@ -10,7 +10,14 @@
     &__wrapper-items {
         display: flex;
         flex-direction: row;
+        justify-content: center;
         margin-top: 78px;
+    }
+
+    @media (max-width: $screen-lg-max) {
+        &__wrapper-items {
+            justify-content: space-between;
+        }
     }
 }
 
@@ -20,6 +27,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-between;
+        flex: 0 0 18.11%;
         margin-right: 80px;
         &:last-child {
             margin-right: 0;
@@ -27,6 +35,9 @@
     }
     &__img {
         display: block;
+        img {
+            width: 100%;
+        }
     }
     &__name {
         margin: 41px 0 0 0;
@@ -71,6 +82,15 @@
         margin-right: 12px;        
         &:last-child {
             margin-right: 0;
+        }
+    }
+
+    @media (max-width: $screen-lg-max) {
+        &__wrapper {
+            margin-right: 0;
+        }
+        &__name {
+            font-size: 20px;
         }
     }
 }

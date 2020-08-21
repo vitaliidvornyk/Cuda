@@ -2,6 +2,13 @@
 
 @import "bootstrap-reboot.min.scss";
 
+// Устанавливаем ширину контейнера //
+
+.container {
+    max-width: 1104px;
+    margin: 0 auto;
+}
+
 // Подключаем шрифты //
 
 @mixin font($font_name, $file_name, $weight, $style) {
@@ -18,12 +25,16 @@
 
 @import "fonts.scss";
 
-// Устанавливаем ширину контейнера //
+// Переменные // 
 
-.container {
-    max-width: 1102px;
-    margin: 0 auto;
-}
+$screen-sm: 576px;
+$screen-md: 767px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+
+$screen-sm-max: 767px;
+$screen-md-max: 991px;
+$screen-lg-max: 1199px;
 
 // Подключаем блоки с css стилями //
 
@@ -38,3 +49,10 @@
 @import "reviews.scss";
 @import "touch.scss";
 @import "footer.scss";
+
+// Отступы по краям в секциях //
+
+.sections-outer {
+    padding-right: 20px;
+    padding-left: 20px;
+}

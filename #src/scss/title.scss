@@ -126,6 +126,11 @@
         letter-spacing: 0.48px;
         text-transform: uppercase;
         color: #ffffff;
+
+        @media (max-width: $screen-lg-max) {
+            margin-top: 45px;
+            font-size: 21px;
+        }
     }
     &_team {
         font-family: TitilliumWeb-Regular;
